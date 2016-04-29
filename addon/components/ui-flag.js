@@ -1,5 +1,7 @@
 import Ember from 'ember';
 import layout from '../templates/components/ui-flag';
+import SharedStylist from 'ember-cli-stylist/mixins/shared-stylist';
+
 const { keys, create } = Object; // jshint ignore:line
 const { RSVP: {Promise, all, race, resolve, defer} } = Ember; // jshint ignore:line
 const { inject: {service} } = Ember; // jshint ignore:line
@@ -9,9 +11,10 @@ const a = Ember.A; // jshint ignore:line
 const named = a(['small', 'medium', 'large', 'huge']);
 
 
-const flag = Ember.Component.extend({
+const flag = Ember.Component.extend(SharedStylist, {
   layout,
   tagName: '',
+  styleBindings: 'fontSize,backgroundColor,height,width,cursor',
 
   country: undefined,
   squared: false,
@@ -24,7 +27,7 @@ const flag = Ember.Component.extend({
       return undefined;
     }
   }),
-  fontSize: computed({
+  fontSize: computed('size',{
     set(_, value) {
       return value;
     },

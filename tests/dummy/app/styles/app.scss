@@ -10,6 +10,14 @@ td {
   line-height: 1.5;
 }
 
+th,td {
+  text-align: center;
+}
+
+table.left td {
+  text-align: left;
+}
+
 h4 {
   padding-top: 1rem;
 }

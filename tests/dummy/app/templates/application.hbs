@@ -1,9 +1,9 @@
 <div class="container">
-  <h2 id="title">Welcome to Ember</h2>
+  <h2 id="title">ui-flag</h2>
 
   <h4>Basic Country Invocation</h4>
 
-  <table>
+  <table class='left'>
     <tr>
       <td>{{ui-flag 'us'}} - United States</td>
       <td>
@@ -29,7 +29,7 @@
 
   <hr>
 
-  <table>
+  <table class='left'>
     <tr>
       <td>{{ui-flag 'us' squared=true}} - United States</td>
       <td>
@@ -95,26 +95,23 @@
 
   <table class='table'>
     <tr>
-      <th>0.5rem</th>
-      <th>Medium</th>
-      <th>Large</th>
-      <th>Huge</th>
+      <th>0.75rem</th>
+      <th>3.00rem</th>
+      <th>8.00rem</th>
       <th></th>
     </tr>
     <tr>
-      <td>{{ui-flag 'gb' size='0.5rem'}}</td>
-      <td>{{ui-flag 'gb' size='medium'}}</td>
-      <td>{{ui-flag 'gb' size='large'}}</td>
-      <td>{{ui-flag 'gb' size='huge'}}</td>
+      <td>{{ui-flag 'gb' size='0.75rem'}}</td>
+      <td>{{ui-flag 'gb' size='3.00rem'}}</td>
+      <td>{{ui-flag 'gb' size='8.00rem'}}</td>
       <td>
         Normal 4/3 ratio flags
       </td>
     </tr>
     <tr>
-      <td>{{ui-flag 'gb' squared=true size='0.5rem'}}</td>
-      <td>{{ui-flag 'gb' squared=true size='medium'}}</td>
-      <td>{{ui-flag 'gb' squared=true size='large'}}</td>
-      <td>{{ui-flag 'gb' squared=true size='huge'}}</td>
+      <td>{{ui-flag 'gb' squared=true size='0.75rem'}}</td>
+      <td>{{ui-flag 'gb' squared=true size='3.00rem'}}</td>
+      <td>{{ui-flag 'gb' squared=true size='8.00rem'}}</td>
       <td>
         Squared flags
       </td>
