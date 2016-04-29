@@ -1,3 +1,123 @@
-<h2 id="title">Welcome to Ember</h2>
+<div class="container">
+  <h2 id="title">Welcome to Ember</h2>
 
-{{outlet}}
+  <h4>Basic Country Invocation</h4>
+
+  <table>
+    <tr>
+      <td>{{ui-flag 'us'}} - United States</td>
+      <td>
+        <pre><code>\{{ui-flag 'us'}}</code></pre>
+      </td>
+      <td>Basic 4/3 flag shape</td>
+    </tr>
+    <tr>
+      <td>{{ui-flag 'gb'}} - United Kingdom</td>
+      <td>
+        <pre><code>\{{ui-flag 'gb'}}</code></pre>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>{{ui-flag 'de'}} - Germany</td>
+      <td>
+        <pre><code>\{{ui-flag 'de'}}</code></pre>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <table>
+    <tr>
+      <td>{{ui-flag 'us' squared=true}} - United States</td>
+      <td>
+        <pre><code>\{{ui-flag 'us' squared=true}}</code></pre>
+      </td>
+      <td>Squared</td>
+    </tr>
+    <tr>
+      <td>{{ui-flag 'gb' squared=true}} - United Kingdom</td>
+      <td>
+        <pre><code>\{{ui-flag 'gb' squared=true}}</code></pre>
+      </td>
+      <td></td>
+    </tr>
+    <tr>
+      <td>{{ui-flag 'de' squared=true}} - Germany</td>
+      <td>
+        <pre><code>\{{ui-flag 'de' squared=true}}</code></pre>
+      </td>
+      <td></td>
+    </tr>
+  </table>
+
+  <hr>
+
+  <h4>Named Sizes</h4>
+  <p>
+    To provide built-in consistency you can use a number of <i>named</i> sizes for your flags. This will leverage built-in CSS classes.
+  </p>
+
+  <table class='table'>
+    <tr>
+      <th>Small</th>
+      <th>Medium</th>
+      <th>Large</th>
+      <th>Huge</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>{{ui-flag 'us' size='small'}}</td>
+      <td>{{ui-flag 'us' size='medium'}}</td>
+      <td>{{ui-flag 'us' size='large'}}</td>
+      <td>{{ui-flag 'us' size='huge'}}</td>
+      <td>
+        Normal 4/3 ratio flags
+      </td>
+    </tr>
+    <tr>
+      <td>{{ui-flag 'us' squared=true size='small'}}</td>
+      <td>{{ui-flag 'us' squared=true size='medium'}}</td>
+      <td>{{ui-flag 'us' squared=true size='large'}}</td>
+      <td>{{ui-flag 'us' squared=true size='huge'}}</td>
+      <td>
+        Squared flags
+      </td>
+    </tr>
+  </table>
+
+  <h4>Specific Sizes</h4>
+  <p>
+    If you need it you can also specify a size of any arbitrary amount in pixels, rem, or em.
+  </p>
+
+  <table class='table'>
+    <tr>
+      <th>0.5rem</th>
+      <th>Medium</th>
+      <th>Large</th>
+      <th>Huge</th>
+      <th></th>
+    </tr>
+    <tr>
+      <td>{{ui-flag 'gb' size='0.5rem'}}</td>
+      <td>{{ui-flag 'gb' size='medium'}}</td>
+      <td>{{ui-flag 'gb' size='large'}}</td>
+      <td>{{ui-flag 'gb' size='huge'}}</td>
+      <td>
+        Normal 4/3 ratio flags
+      </td>
+    </tr>
+    <tr>
+      <td>{{ui-flag 'gb' squared=true size='0.5rem'}}</td>
+      <td>{{ui-flag 'gb' squared=true size='medium'}}</td>
+      <td>{{ui-flag 'gb' squared=true size='large'}}</td>
+      <td>{{ui-flag 'gb' squared=true size='huge'}}</td>
+      <td>
+        Squared flags
+      </td>
+    </tr>
+  </table>
+</div>

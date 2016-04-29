@@ -1,0 +1,18 @@
+$flag-icon-css-path: '/flags';
+$flag-icon-rect-path: '/4x3' !default;
+$flag-icon-square-path: '/1x1' !default;
+
+@import 'flag-icon-base';
+
+.flag-icon.small {
+  font-size: 1rem;
+}
+.flag-icon.medium {
+  font-size: 1.5rem;
+}
+.flag-icon.large {
+  font-size: 2rem;
+}
+.flag-icon.huge {
+  font-size: 3rem;
+}

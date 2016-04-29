@@ -1,0 +1,15 @@
+@import 'ui-flag';
+@import 'bootstrap-flex';
+@include flag-icon(us);
+@include flag-icon(gb);
+@include flag-icon(de);
+
+td {
+  padding: 0.25rem 2rem !important;
+  vertical-align: middle;
+  line-height: 1.5;
+}
+
+h4 {
+  padding-top: 1rem;
+}
