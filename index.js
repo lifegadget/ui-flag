@@ -15,8 +15,6 @@ module.exports = {
     const sassOptions = app.options.sassOptions || { includePaths: []};
     const bootstrapPath = path.join(app.bowerDirectory, 'flag-icon-css/sass');
     sassOptions.includePaths.push(bootstrapPath);
-    // target.import(path.join(app.bowerDirectory, 'flag-icon-css/sass/flag-icon-base.scss'));
-    // target.import(path.join(app.bowerDirectory, 'flag-icon-css/sass/variables.scss'));
   },
 
   treeForStyles: function(tree) {
@@ -32,8 +30,8 @@ module.exports = {
       exclude: ['variables.scss']
     });
     trees.push(flags);
-    const uiFlagVendor = new Funnel('vendor/ui-flag');
-    trees.push(uiFlagVendor);
+    // const uiFlagVendor = new Funnel('/ui-flag');
+    // trees.push(uiFlagVendor);
 
     if (existingStyle) {
       trees.push(existingStyle);
@@ -41,6 +39,23 @@ module.exports = {
 
     return mergeTrees(trees);
   },
+
+  // treeForVendor: function(tree) {
+  //   const vendor = path.join('vendor', 'ui-flag');
+  //   const trees = [];
+  //
+  //   if(tree) {
+  //     trees.push(tree);
+  //   }
+  //
+  //   const svgs = new Funnel(vendor, {
+  //     srcDir: '',
+  //     destDir: '/vendor/ui-flag'
+  //   });
+  //   trees.push(svgs);
+  //
+  //   return mergeTrees(trees);
+  // },
 
   treeForPublic: function(tree) {
     const bootstrapPath = path.join('bower_components', 'flag-icon-css');

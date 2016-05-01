@@ -18,6 +18,7 @@ The SASS/SVG assets are brought in via Bower but all the base work will be done 
 In order to not overload your CSS, we are assuming that you are using SASS and therefore we have included the base CSS buy you'll need to manually include the country codes that you plan to use. All countries are referred to using the two-letter [ISO 3166-1-alpha-2](http://www.iso.org/iso/country_names_and_code_elements) coding. So, for instance, to include the UK and US you would add the following to your SCSS file:
 
 ````scss
+@import 'ui-flag';
 @include flag-icon(gb);
 @include flag-icon(us);
 ````
@@ -32,6 +33,8 @@ Here are a few simple examples:
 {{ui-flag 'us'}}
 {{ui-flag 'uk' squared=true}}
 ````
+
+Check out the demo at: [demo app](https://ui-flag.firebaseapp.com)
 
 ## License
 
