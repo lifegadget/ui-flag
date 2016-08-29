@@ -46,5 +46,3 @@ const flag = Ember.Component.extend(SharedStylist, {
 flag.reopenClass({
   positionalParams: ['country']
 });
-flag[Ember.NAME_KEY] = 'ui-flag';
-export default flag;
