@@ -21,7 +21,7 @@ const flag = Ember.Component.extend(SharedStylist, {
   size: undefined,
   _size: computed('size', function() {
     const size = this.get('size');
-    if (named.contains(size)) {
+    if (named.includes(size)) {
       return size;
     } else {
       return undefined;
@@ -33,7 +33,7 @@ const flag = Ember.Component.extend(SharedStylist, {
     },
     get() {
       const size = this.get('size');
-      if (named.contains(size)) {
+      if (named.includes(size)) {
         return undefined;
       } else {
         return size;
