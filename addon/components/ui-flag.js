@@ -46,3 +46,5 @@ const flag = Ember.Component.extend(SharedStylist, {
 flag.reopenClass({
   positionalParams: ['country']
 });
+
+export default flag;
