@@ -1,5 +1,13 @@
 # ui-flag
-> quickly and easily display country flags in EmberJS applications
+quickly and easily display country flags in EmberJS applications
+
+---
+
+> ### :warning: Maintainers wanted
+>
+> I am no longer using or supporting this plugin.
+
+---
 
 Uses the [`flag-icon-css`](https://github.com/lipis/flag-icon-css) library of SVG flags and wraps it in a simple Ember layer to make it more accessible.
 
